@@ -1,8 +1,8 @@
 import re
 
 RISK_PATTERNS = {
-    "No consent": r"(no consent|consent not obtained|refused consent)",
-    "Missing allergy info": r"(no allergy info|allergy history unknown|unknown allergy)",
+    "No consent": r"(no consent|consent not.*documented|consent not obtained|refused consent)",
+    "Missing allergy info": r"(no known allergies|no allergy info|allergy history unknown|unknown allergy)",
     "Medication dose issue": r"(wrong dose|dose error|overdose|underdose)",
     "Missing follow-up": r"(no follow-up|not scheduled|follow-up unclear)"
 }

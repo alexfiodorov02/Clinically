@@ -6,7 +6,7 @@ def load_note(path):
         return f.read()
 
 def main():
-    note_path = "sample-notes/note1.txt"
+    note_path = "sample-notes/note-1.txt"
     note_text = load_note(note_path)
 
     print("\n--- ORIGINAL NOTE ---\n")
@@ -22,7 +22,7 @@ def main():
         for issue in issues:
             print(f"⚠️  {issue}")
     else:
-        print("✅ No compliance issues detected.")
+        print("No compliance issues detected.")
 
 if __name__ == "__main__":
     main()
